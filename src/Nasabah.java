@@ -12,5 +12,5 @@ public abstract class Nasabah {
 
     abstract int NoTelp (int no);
 
-    abstract int Norek(int length);
+    abstract int NoRek(int length);
 }

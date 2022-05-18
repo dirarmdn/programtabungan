@@ -27,7 +27,7 @@ public class Simpedes extends Nasabah{
         return nik;
     }
 
-    int Norek(int length){
+    int NoRek(int length){
         String code = "";
         for (int i = 0; i < length; i++) {
             code += (char) (random.nextInt(8) + '0');
@@ -41,7 +41,7 @@ public class Simpedes extends Nasabah{
     {
         Scanner inp = new Scanner(System.in);
         Simpedes data = new Simpedes();
-        int no_rek = data.Norek(8);
+        int no_rek = data.NoRek(8);
 
         System.out.println("Pendaftaran Nasabah Baru");
         System.out.print("Masukkan Nama Lengkap Anda : ");
@@ -53,9 +53,27 @@ public class Simpedes extends Nasabah{
         System.out.print("NIK :");
         nik = inp.nextInt();
 
+        System.out.println("Pendaftaran Nasabah Baru");
+        System.out.print("Masukkan Nama Lengkap Anda : ");
+        nama = inp.nextLine();
+        System.out.print("Masukkan Alamat Lengkap: ");
+        alamat = inp.nextLine();
+        System.out.print("Masukkan Nomor Telepon :");
+        notlp = inp.nextInt();
+        System.out.print("Masukkan NIK sesuai dengan KTP:");
+        nik = inp.nextInt();
+
+        System.out.println("Selamat Rekening SimPeDes Anda sudah terbit!");
+        System.out.println("Nama :"+nama);
+        System.out.println("Alamat :"+alamat);
+        System.out.println("Nomor Telepon : "+notlp);
+        System.out.println("NIK : "+nik);
         System.out.println("Rekening anda adalah :"+no_rek);
 
-
-        System.out.println(nama);
+        System.out.println("Nama :"+nama);
+        System.out.println("Alamat :"+alamat);
+        System.out.println("Nomor Telepon : "+notlp);
+        System.out.println("NIK : "+nik);
+        System.out.println("Untuk penerbitan kartu kunjungi kantor cabang terdekat");
     }
 }

@@ -1,6 +1,6 @@
 public interface Menu {
-    void penyetoran ();
-    void penarikan ();
-    void cetakPenarikan();
+    void penyetoran (int sal);
+    void penarikan (int jumlahTarikan);
     void cetakSaldo();
+    void transfer(int s);
 }
