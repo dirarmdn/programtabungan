@@ -7,7 +7,6 @@ public class SimPel extends Nasabah{
     private static String alamat;
     private static int notlp;
     static int nik;
-    char pelajar;
 
     @Override
     String NamaNasabah(String nm){
@@ -49,27 +48,22 @@ public class SimPel extends Nasabah{
         SimPel spl = new SimPel();
         int no_rek = spl.NoRek(8);
 
-        System.out.println("Pendaftaran Nasabah Baru");
+        System.out.println("=====Pendaftaran Nasabah Baru=====");
         System.out.print("Masukkan Nama Lengkap Anda : ");
         nama = inp.nextLine();
         System.out.print("Masukkan Alamat Lengkap: ");
         alamat = inp.nextLine();
-        System.out.print("Masukkan Nomor Telepon :");
+        System.out.print("Masukkan Nomor Telepon : ");
         notlp = inp.nextInt();
-        System.out.print("Masukkan NIK sesuai dengan KTP:");
+        System.out.print("Masukkan NIK sesuai dengan KTP: ");
         nik = inp.nextInt();
 
         System.out.println("Selamat Rekening SimPel Anda sudah terbit!");
-        System.out.println("Nama :"+nama);
-        System.out.println("Alamat :"+alamat);
+        System.out.println("Nama : "+nama);
+        System.out.println("Alamat : "+alamat);
         System.out.println("Nomor Telepon : "+notlp);
         System.out.println("NIK : "+nik);
         System.out.println("Rekening anda adalah :"+no_rek);
-
-        System.out.println("Nama :"+nama);
-        System.out.println("Alamat :"+alamat);
-        System.out.println("Nomor Telepon : "+notlp);
-        System.out.println("NIK : "+nik);
         System.out.println("Untuk penerbitan kartu kunjungi kantor cabang terdekat");
     }
 }
